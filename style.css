@@ -4,6 +4,8 @@
 }
 
 #body {
+    height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: 10% 75% 15%;
     grid-template-rows: 10% 80% 10%;
@@ -17,15 +19,42 @@
 
 #header {
     grid-area: header;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'logo title'
+    ;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#title {
+    grid-area: title;
+    text-align: center;
 }
 
 #nav {
     grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        '.'
+        'navBox'
+        '.'
+    ;
+}
+
+#navBox {
+    grid-area: navBox;
 }
 
 #main {
     grid-area: main;
     display: grid;
+    gap: 5px;
     grid-template-columns: repeat(auto-fit, minMax(250px, 1fr));
 }
 
@@ -35,8 +64,24 @@
 
 #ads {
     grid-area: ads;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        '.'
+        'adBox'
+        '.'
+    ;
+}
+
+#adBox {
+    grid-area: adBox;
 }
 
 #footer {
     grid-area: footer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
 }
