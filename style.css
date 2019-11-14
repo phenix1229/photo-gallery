@@ -3,3 +3,40 @@
     padding: 0;
 }
 
+#body {
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+        'header header header'
+        'nav main ads'
+        'nav main ads'
+        'footer footer footer'
+    ;
+}
+
+#header {
+    grid-area: header;
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(250px, 1fr));
+}
+
+.photo {
+
+}
+
+#ads {
+    grid-area: ads;
+}
+
+#footer {
+    grid-area: footer;
+}
