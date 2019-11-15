@@ -3,9 +3,19 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    background-color: rgb(151, 253, 253);
+}
+
 #body {
     height: 100vh;
     width: 100vw;
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: 10% 75% 15%;
     grid-template-rows: 10% 80% 10%;
@@ -51,17 +61,26 @@
 
 #navBox {
     grid-area: navBox;
+    background-color: #DEE0E9;
+}
+
+a {
+    text-decoration: none;
 }
 
 #main {
+    padding: 10px;
     grid-area: main;
     display: grid;
     gap: 5px;
-    grid-template-columns: repeat(auto-fit, minMax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
+    overflow-x: hidden; 
+    overflow-x: auto; 
 }
 
-.photo {
-
+img {
+    height: 100%;
+    width: 100%;
 }
 
 #ads {
@@ -70,7 +89,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-        '.'
         'adBox'
         '.'
     ;
@@ -84,6 +102,6 @@
     grid-area: footer;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 20px;
     text-align: center;
+    background-color: #DEE0E9;
 }
