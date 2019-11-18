@@ -245,7 +245,7 @@ img {
         width: 100vw;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 7% 13% 40% 30% 10%;
+        grid-template-rows: 7% 13% 55% 20% 5%;
     }
 
     #header {
@@ -297,23 +297,34 @@ img {
     #gallery {
         grid-column: 1/2;
         grid-row: 3/4;
+        margin: 0 10px 0 10px
+    }
+
+    #main {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        overflow-x: hidden; 
+        overflow-x: auto;
+        margin: 0 10px 0 10px;
     }
 
     #ads {
         grid-column: 1/2;
         grid-row: 4/5;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minMax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minMax(50px, 1fr));
     }
 
     #ads h2 {
         display: none;
     }
 
+    #ads img{
+        height: 100%;
+    }
+
     #footer {
         grid-column: 1/2;
         grid-row: 5/6;
     }
-
-
 }
