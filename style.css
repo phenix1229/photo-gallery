@@ -8,15 +8,12 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    /* color: #777; */
     color: #2e3d6c;
-    /* background-color: rgb(151, 253, 253); */
 }
 
 #body {
     height: 100vh;
     width: 100vw;
-    /* background-color: whitesmoke; */
     background-color: #506296;
     display: grid;
     grid-template-columns: 10% 75% 15%;
@@ -47,7 +44,6 @@ body {
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
-    /* background-color: #B6BED4; */
 }
 
 #title h1 {
@@ -68,7 +64,6 @@ body {
 
 #navBox {
     grid-area: navBox;
-    /* background-color: #DEE0E9; */
     justify-content: space-between;
     align-content: center;
     padding: 10px;
@@ -105,6 +100,13 @@ a :hover {
     overflow-x: auto; 
 }
 
+#main {
+    color: #777;
+    background-color: whitesmoke;
+    padding: 50px;
+    font-size: 18px;
+}
+
 img {
     height: 100%;
     width: 100%;
@@ -138,6 +140,5 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    /* background-color: #DEE0E9; */
     background-color: whitesmoke;
 }
