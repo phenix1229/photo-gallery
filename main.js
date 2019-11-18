@@ -1,16 +1,8 @@
-document.querySelectorAll('#gallery > .photo > img').forEach(function (pic){
-    const thing = document.querySelector('.photo');
-    // console.log(thing)
-    // const picInfo = document.querySelector('.img').innerHTML;
-    // console.log(picInfo);
-    // const pic = document.querySelector('.img > img');
+document.querySelectorAll('.photo').forEach(function (div){
+    const pic = div.firstChild;
     const iLink = document.createElement('a');
-    // const picThumb = document.createElement('img')
     iLink.target = '_blank';
-    iLink.href = pic.src; 
-    // picThumb.src = picInfo
+    iLink.href = document.querySelector('.photo > img').src; 
     iLink.innerHTML = pic.outerHTML
-    // thing.removeChild(pic);
-    thing.replaceChild(iLink, pic);
-    // thing.appendChild(iLink);
+    div.replaceChild(iLink, pic);
 })
