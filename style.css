@@ -8,14 +8,16 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #777;
-    background-color: rgb(151, 253, 253);
+    /* color: #777; */
+    color: #2e3d6c;
+    /* background-color: rgb(151, 253, 253); */
 }
 
 #body {
     height: 100vh;
     width: 100vw;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: #506296;
     display: grid;
     grid-template-columns: 10% 75% 15%;
     grid-template-rows: 10% 80% 10%;
@@ -43,8 +45,13 @@ body {
 #title {
     grid-area: title;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     text-align: center;
+    /* background-color: #B6BED4; */
+}
+
+#title h1 {
+    color: #B6BED4;
 }
 
 #nav {
@@ -53,23 +60,43 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-        '.'
         'navBox'
+        '.'
         '.'
     ;
 }
 
 #navBox {
     grid-area: navBox;
-    background-color: #DEE0E9;
+    /* background-color: #DEE0E9; */
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+}
+
+.linkBox {
+    background-color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #777;
+    box-shadow: 0 0 3px 3px #2e3d6c;
 }
 
 a {
     text-decoration: none;
+    color: #777;
 }
 
-#main {
+a :hover {
+    background-color: black;
+    color: white;
+}
+
+#gallery {
+    border: 1px solid #777;
     padding: 10px;
+    background-color: white;
     grid-area: main;
     display: grid;
     gap: 5px;
@@ -81,21 +108,29 @@ a {
 img {
     height: 100%;
     width: 100%;
+    border: 1px solid black;
 }
 
 #ads {
     grid-area: ads;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        'adBox'
-        '.'
-    ;
+    grid-template-rows: 1fr;
+    padding: 10px;
 }
 
-#adBox {
-    grid-area: adBox;
+#ads > h2 {
+    padding-left: 10px;
+    margin-bottom: 0;
+    color: #B6BED4;
+}
+
+#aws {
+    transition: 1s opacity;
+}
+
+#ads a {
+    box-shadow: 0 0 3px 3px #2e3d6c;
 }
 
 #footer {
@@ -103,5 +138,6 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: #DEE0E9;
+    /* background-color: #DEE0E9; */
+    background-color: whitesmoke;
 }
