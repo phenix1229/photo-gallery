@@ -145,7 +145,7 @@ img {
         width: 100vw;
         display: grid;
         grid-template-columns: 75% 25%;
-        grid-template-rows: 5% 5% 85% 5%;
+        grid-template-rows: 10% 5% 80% 5%;
     }
 
     #header {
@@ -186,44 +186,45 @@ img {
 
     #homeBtn {
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
     } 
     
     #aboutBtn {
         grid-column: 2/3;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
     
     #mySiteBtn {
         grid-column: 3/4;
-        grid-row: 1/2;
+        grid-row: 2/3;
     } 
     
     #repoBtn {
         grid-column: 4/5;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
 
     #gallery {
         grid-column: 1/2;
         grid-row: 3/4;
+        margin-top: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(8, 1fr);
-        height: 100%;
-        width: 100%;
-
     }
 
-    .photo {
-        display: none;
+    #main {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 10px;
     }
 
     #ads {
         grid-column: 2/3;
         grid-row: 3/4;
-        height: 75%;
-        width: 100%;
+    }
+
+    #ads h2 {
         display: none;
     }
 
