@@ -148,7 +148,7 @@ img {
 #aws {
     grid-area: aws;
     height: 160px;
-    /* margin-bottom: 5px; */
+    margin-bottom: 5px;
 }
 
 #codeWars {
