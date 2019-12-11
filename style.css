@@ -16,9 +16,7 @@ body {
     width: 100vw;
     background-color: #506296;
     display: grid;
-    /* grid-template-columns: 10% 75% 15%; */
     grid-template-columns: 1fr 7.5fr 1.5fr;
-    /* grid-template-rows: 10% 80% 10%; */
     grid-template-rows: 1fr 8fr 1fr;
     grid-template-areas: 
         'header header header'
@@ -36,7 +34,6 @@ body {
 
 #header {
     grid-area: header;
-    /* grid-template-columns: 25% 75%; */
     grid-template-columns: 2.5fr 7.5fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -130,21 +127,21 @@ img {
     grid-area: ads;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr; */
     grid-template-rows: .5fr 9fr .5fr;
     grid-template-areas: 
         'adH2'
         'aws'
         'aws'
-        'aws'
+        /* 'aws' */
         'codeWars'
         'codeWars'
         'codeWars'
-        'github'
         'github'
         'github'
         'adsBlank'
+        'adsBlank'
     ;
+    align-content: space-around;
     padding: 10px;
 }
 
