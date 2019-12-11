@@ -148,18 +148,18 @@ img {
 #aws {
     grid-area: aws;
     height: 160px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #codeWars {
     grid-area: codeWars;
-    height: 160px;
+    height: 155px;
     margin-bottom: 10px;
 }
 
 #github {
     grid-area: github;
-    height: 160px;
+    height: 135px;
 }
 
 #adsBlank {
